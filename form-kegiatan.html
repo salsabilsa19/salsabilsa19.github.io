@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="Sinargold - Jelajahi Indonesia Dengan Jarimu" name="description" />
+  <meta content="sabilsip_" name="author" />
+  <meta name="theme-color" content="#21d64c">
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon/sg1.ico">
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap/app.css" rel="stylesheet" type="text/css" />
+  <!-- Material Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+  <!-- Sweel Alert -->
+  <link href="node_modules/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+  <!-- Custom CSS -->
+  <link href="assets/css/custom/app.css" rel="stylesheet" type="text/css" />
+
+  <title>Pendaftaran Kegiatan</title>
+</head>
+
+<body>
+
+
+
+  <!-- START: Header -->
+  <section id="header">
+
+    <!-- START: Navbar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" data-aos="fade-down">
+            <img src="assets/images/logo/sg2.png" alt="" class="img-fluid" width="150">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item" data-aos="zoom-in-down" data-aos-delay="50">
+                <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item" data-aos="zoom-in-down" data-aos-delay="100">
+                <a class="nav-link" href="destination_list.html">Destinasi</a>
+              </li>
+              <li class="nav-item" data-aos="zoom-in-down" data-aos-delay="150">
+                <a class="nav-link" href="event_list.html">Event</a>
+              </li>
+              <li class="nav-item" data-aos="zoom-in-down" data-aos-delay="250">
+                <a class="nav-link" href="contact-us.html">Hubungi Kami</a>
+              </li>
+              <li class="nav-item" data-aos="zoom-in-down" data-aos-delay="300">
+                <div class="d-flex gap-3">
+                  <button class="btn btn-light">Masuk</button>
+                  <button class="btn btn-primary text-white">Daftar</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END: Navbar -->
+
+  </section>
+  <!-- END: Header -->
+
+  <!-- START: Content -->
+  <section id="formKegiatan">
+    <div class="container">
+      <div class="bg-white rounded p-3 shadow mb-3 text-sm text-decoration-none">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+            <li class="breadcrumb-item"><a href="destination_list.html">Destinasi</a></li>
+            <li class="breadcrumb-item"><a href="detail_rajaampat.html">Raja Ampat</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Pendaftaran Kegiatan</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="card py-4 px-4 shadow">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="card border p-4">
+              <h5>Jenis <span class="text-primary"> Kegiatan </span>Yang Kamu Pilih</h5>
+              <div class="card border p-3 mt-2 d-flex flex-column text-start" for="kegiatan-1">
+                <span>Snorkeling</span>
+                <span class="text-sm mt-2">Nikmati keindahan biota laut Raja Ampat.</span>
+              </div>
+              <div class="card border p-3 mt-2 d-flex flex-column text-start" for="kegiatan-2">
+                <span>Snorkeling</span>
+                <span class="text-sm mt-2">Nikmati keindahan biota laut Raja Ampat.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 mt-4 mt-lg-0">
+            <div class="card border p-4">
+              <form>
+                <div class="row text-sm mt-4">
+                  <div class="col-lg-12">
+                    <label for="nama">Nama</label>
+                    <input type="text" class="form-control mt-2 text-sm" required placeholder="Masukkan nama">
+                  </div>
+                  <div class="mt-3 col-lg-12">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control mt-2 text-sm" required placeholder="Masukkan email">
+                  </div>
+                  <div class="mt-3 col-lg-6">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control mt-2 text-sm" required placeholder="Masukkan kata sandi">
+                  </div>
+                  <div class="mt-3 col-lg-6">
+                    <label for="telepon">Telepon</label>
+                    <input type="number" class="form-control mt-2 text-sm" required
+                      placeholder="Masukkan nomor telepon">
+                  </div>
+                  <div class="mt-3 col-lg-12">
+                    <label for="alamat">Alamat</label>
+                    <textarea type="text" class="form-control mt-2 text-sm" required
+                      placeholder="Masukkan nomor telepon"></textarea>
+                  </div>
+                  <div class="mt-3 col-lg-6">
+                    <label for="pekerjaan">Pekerjaan</label>
+                    <input type="text" class="form-control mt-2 text-sm" required placeholder="Masukkan pekerjaan">
+                  </div>
+                  <div class="mt-3 col-lg-6">
+                    <label for="hobi">Hobi</label>
+                    <input type="text" class="form-control mt-2 text-sm" required placeholder="Masukkan hobi">
+                  </div>
+                  <div class="mt-3 col-lg-12">
+                    <label for="catatan">Catatan</label>
+                    <textarea type="text" class="form-control mt-2 text-sm" required
+                      placeholder="Masukkan nomor telepon"></textarea>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <button class="btn btn-primary text-white ms-auto text-xs" onclick="showAlert()">Proses</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Content -->
+
+  <!-- START: Footer -->
+  <footer class="bg-white mt-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="d-flex flex-column gap-3">
+            <img src="assets/images/logo/sg2.png" alt="" width="150">
+            <span>Partner terbaik kamu menjelajahi Indonesia!</span>
+          </div>
+          <div class="d-flex gap-3 mt-5">
+            <a href="https://instagram.com/sabilsip_">
+              <img src="assets/images/design/instagram.svg" alt="" style="filter: contrast(0.8);">
+            </a>
+            <a href="https://twitter.com/jokowi">
+              <img src="assets/images/design/twitter.svg" alt="" style="filter: contrast(0.8);">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-4">
+              <h6>Tautan</h6>
+              <ul class="nav flex-column text-sm gap-3 mt-4">
+                <li><a href="event_list.html" class="text-decoration-none text-gray">Event</a></li>
+                <li><a href="destination_list.html" class="text-decoration-none text-gray">Destinasi</a></li>
+                <li><a href="contact-us.html" class="text-decoration-none text-gray">Tentang Kami</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h6>Bantuan</h6>
+              <ul class="nav flex-column text-sm gap-3 mt-4">
+                <li><a href="#" class="text-decoration-none text-gray">Pertanyaan</a></li>
+                <li><a href="#" class="text-decoration-none text-gray">Laporan</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h6>Kontak Kami</h6>
+              <ul class="nav flex-column text-sm gap-3 mt-4">
+                <li class="d-flex">
+                  <span class="align-self-center material-icons material-icons-outlined me-3 text-sm">email</span>
+                  <span class="align-self-center">Sinargold@mail.com</span>
+                </li>
+                <li class="d-flex">
+                  <span class="align-self-center material-icons material-icons-outlined me-3 text-sm">phone</span>
+                  <span class="align-self-center">+123 4567 890</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END: Footer -->
+
+  <!-- START: Script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="libs/jquery-mousewheel-main/jquery.mousewheel.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <script>
+    function showAlert() {
+      var input = $('input').val();
+      if (input == '') {
+        Swal.fire("Kesalahan!", "Mohon isi seluruh data dengan benar", "warning");
+      } else {
+        Swal.fire("Sukses!", "Pendaftaran kegiatan telah berhasil", "success");
+      }
+    }
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
